@@ -2,9 +2,6 @@ public class Principal {
 
     
 public static void main(String[] args) {
-    System.out.println("hola");
-    System.out.println("hihi");
-    System.out.println("test");
-    System.out.println("TETED");
+
 }
 }
