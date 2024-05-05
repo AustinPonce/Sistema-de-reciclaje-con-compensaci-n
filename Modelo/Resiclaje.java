@@ -19,7 +19,6 @@ public Resiclaje (String name,String id, double kg){
 
 
     public void Ventana(){
-
         
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());

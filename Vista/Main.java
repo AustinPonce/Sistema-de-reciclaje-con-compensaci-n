@@ -2,7 +2,7 @@ import java.awt.EventQueue;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import javax.swing.JOptionPane;
-import modelo.Resiclaje;
+//import modelo.Resiclaje;
 
 public class Main {
 	public static void main(String[] args) {
