@@ -17,7 +17,7 @@ public String typePaper;// tipo de papel, periodico,libros,cuadernos,etc
         }
 //star gets and sets
 public int getPacksPaper(){
-    return packsPaper;
+    return packsPaper; 
 }
 public int setPacksPaper(int packsPaper){
     return packsPaper; 
