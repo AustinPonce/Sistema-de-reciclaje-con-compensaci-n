@@ -1,4 +1,7 @@
-public abstract class Resiclaje{//star class
+
+import javax.swing.JFrame;
+
+public class Resiclaje  extends JFrame{//star class
     //atrivutos
 protected String name,id;
 protected double kg;
@@ -12,10 +15,14 @@ public Resiclaje (String name,String id, double kg){
 //end met abst
 // gets and sets
 
+public Resiclaje() {
+	// TODO Auto-generated constructor stub
+}
+
 public String getName(){
     return name;
 }
-public void String setName(String name){
+public void setName(String name){
     this.name=name;
 }
 
@@ -28,8 +35,8 @@ public void setId(String id){
 public double getKg(){
     return kg;
 }
-public void setKg(double kg){
-    this.kg=kg;
+public double setKg(double kg){
+    return this.kg=kg;
 }
 //end gets and sets
 
@@ -42,5 +49,3 @@ public  String toString(){
     + "\nKg: "+ kg;
 
 }//end override
-
-}//end class
