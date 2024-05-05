@@ -18,7 +18,7 @@ public class Main {
     							JOptionPane.OK_CANCEL_OPTION);
 
     					if (x == JOptionPane.OK_OPTION) {//si se seleciona aceptar
-    						JOptionPane.showMessageDialog(null, " Cerrando programa de forma exitosa.","Informe",JOptionPane.INFORMATION_MESSAGE);
+    						JOptionPane.showMessageDialog(null, " Cerrado el programa de forma exitosa.","Informe",JOptionPane.INFORMATION_MESSAGE);
     						System.exit(0);//cierra el programa
     					} else {
     						JOptionPane.showMessageDialog(null, " El cierre se cancelo con exito.","Informe",JOptionPane.INFORMATION_MESSAGE);
