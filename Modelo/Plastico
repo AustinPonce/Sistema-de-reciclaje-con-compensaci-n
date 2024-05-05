@@ -4,34 +4,34 @@ public class Plastico extends Resiclaje{// star class
     public int packsPlastic;// cantidad de paquetes de plastico
     public String typePlastic; // tipo de plastico botellas, jueguetes, cajas, etc
 
-    public Vidrio(String name, String id, double kg, String typePlastic, int packsPlastic){
+    public Plastico(String name, String id, double kg, String typePlastic, int packsPlastic){
         super(name,id,kg);
-        this.packsPlastic;
-        this.typePlastic;
+        this.packsPlastic = packsPlastic;
+        this.typePlastic = typePlastic;
     }
 
     public double remuneracion(){
         double remuneracion =0;
         double valorPlastico =300; //monto por asignar
         remuneracion = valorPlastico *(getPacksPlastic() * getKg());
-        return remuneracion
+        return remuneracion; 
         }
 //star gets and sets
 public int getPacksPlastic(){
     return packsPlastic;
 }
-public void setPacksPlastic(int packsPlastic){
-    this.packsPlastic=packsPlastic;
+public int setPacksPlastic(int packsPlastic){
+    return packsPlastic;
 }
 public String getTypePlastic(){
-    return typePlastic
+    return typePlastic;
 }
-public void setTypePlastic(String typePlastic){
-    this.typePlastic=typePlastic
+public String setTypePlastic(String typePlastic){
+    return typePlastic;
 }
 //end gets and sets
 //override
-@override
+@Override
 public  String toString(){
 
     return "Vidrio\n"
