@@ -16,7 +16,7 @@ public class Vidrio extends Resiclaje{// star class
 	double valorVidrio =250; //monto por asignar
 	remuneracion = valorVidrio *(getPacksGlass() * getKg());
 	return remuneracion; 
-	}
+	} 
 
 	//gets y sets
 	public int getPacksGlass(){
