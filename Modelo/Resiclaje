@@ -1,5 +1,5 @@
-
-import javax.swing.JFrame;
+import  java.awt.*;
+import javax.swing.*;
 
 public class Resiclaje  extends JFrame{//star class
     //atrivutos
@@ -13,6 +13,28 @@ public Resiclaje (String name,String id, double kg){
     this.kg=kg;
 }
 //end met abst
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+    public void Ventana(){
+        JPanel mainPanel = new JPanel();
+        mainPanel.setLayout(new BorderLayout());
+        mainPanel.setBlackground(new Color())
+
+        setTitle(title"Wellcome");
+        setSize(500,600);
+        setMinimunSize(new Dimension(300,400));
+        setDefualCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setVisible(true);
+    }
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // gets and sets
 
 public Resiclaje() {
@@ -47,5 +69,5 @@ public  String toString(){
     +"Nombre: "+ name 
     +"\nID: " + id
     + "\nKg: "+ kg;
-
+}
 }//end override
