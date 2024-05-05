@@ -22,13 +22,13 @@ public void String setName(String name){
 public String getId(){
     return id;
 }
-public void String setId(String id){
+public void setId(String id){
     this.id=id;
 }
 public double getKg(){
     return kg;
 }
-public double setKg(double kg){
+public void setKg(double kg){
     this.kg=kg;
 }
 //end gets and sets

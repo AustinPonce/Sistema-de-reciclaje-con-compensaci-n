@@ -22,13 +22,13 @@ return remuneracion
 public int getPacksGlass(){
     return packsGlass;
 }
-public int setPacksGlass(int packsGlass){
+public void setPacksGlass(int packsGlass){
     this.spacksGlass=packsGlass;
 }
 public String getTypeGlass(){
     return typeGlass;
 }
-public String setTypeGlass(String typeGlass){
+public void setTypeGlass(String typeGlass){
     this.typeGlass=typeGlass;
 }
 //end gets and sets

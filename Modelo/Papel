@@ -19,13 +19,13 @@ public String typePaper;// tipo de papel, periodico,libros,cuadernos,etc
 public int getPacksPaper(){
     return packsPaper;
 }
-public int setPacksPaper(int packsPaper){
+public void setPacksPaper(int packsPaper){
     this.packsPaper=packsPaper
 }
 public String getTypePaper(){
     return typePaper
 }
-public String setTypePaper(String typePaper){
+public void setTypePaper(String typePaper){
     this.typePaper=typePaper;
 }
 //end gets and sets

@@ -20,13 +20,13 @@ public class Plastico extends Resiclaje{// star class
 public int getPacksPlastic(){
     return packsPlastic;
 }
-public int setPacksPlastic(int packsPlastic){
+public void setPacksPlastic(int packsPlastic){
     this.packsPlastic=packsPlastic;
 }
 public String getTypePlastic(){
     return typePlastic
 }
-public String setTypePlastic(String typePlastic){
+public void setTypePlastic(String typePlastic){
     this.typePlastic=typePlastic
 }
 //end gets and sets
