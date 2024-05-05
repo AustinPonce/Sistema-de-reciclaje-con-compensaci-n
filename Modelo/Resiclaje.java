@@ -56,23 +56,6 @@ public void initialize(){
     setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     setVisible(true);
 }
-
-
-
-
-    /*public void Ventana(){
-
-        JPanel mainPanel = new JPanel();
-        mainPanel.setLayout(new BorderLayout());
-        mainPanel.setBackground(new Color(0,153,153))
-
-        setTitle("Bien venido");
-        setSize(500,600);
-        setMinimumSize(new Dimension(300,400));
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setVisible(true);
-    }*/
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // gets and sets
