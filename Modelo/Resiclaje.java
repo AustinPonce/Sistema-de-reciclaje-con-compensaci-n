@@ -19,9 +19,11 @@ public Resiclaje (String name,String id, double kg){
 
 
     public void Ventana(){
+
+        
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());
-        mainPanel.setBlackground(new Color())
+        mainPanel.setBlackground(new Color(0,153,153))
 
         setTitle(title"Wellcome");
         setSize(500,600);
