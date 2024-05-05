@@ -1,8 +1,7 @@
-import java.awt.EventQueue;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import javax.swing.JOptionPane;
-//import modelo.Resiclaje;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
 
 public class Main {
 	public static void main(String[] args) {
