@@ -23,12 +23,12 @@ public Resiclaje (String name,String id, double kg){
         
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());
-        mainPanel.setBlackground(new Color(0,153,153))
+        mainPanel.setBackground(new Color(0,153,153))
 
-        setTitle(title"Wellcome");
+        setTitle("Bien venido");
         setSize(500,600);
-        setMinimunSize(new Dimension(300,400));
-        setDefualCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new Dimension(300,400));
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
     }
 
