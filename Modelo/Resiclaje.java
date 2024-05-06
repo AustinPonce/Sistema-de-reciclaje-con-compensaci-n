@@ -2,22 +2,21 @@
 import javax.swing.*;
 
 public class Resiclaje  extends JFrame{//star class
+    private static final long serialVersionUID = 1L;
+	
     //atrivutos
-protected String name;
+protected String name; 
 protected int id;
-protected double kg;
-    
+protected static double kg;
+
 //star met abst
-public Resiclaje (String name, int id, double kg){
+public Resiclaje (String name,int id, double kg){
     this.name=name;
     this.id=id;
     this.kg=kg;
-} 
+}
 //end met abst
-
 // gets and sets
-
-
 
 public String getName(){
     return name;
@@ -40,12 +39,7 @@ public double setKg(double kg){
 }
 //end gets and sets
 
-@Override
-public  String toString(){
 
-    return "Informacion \r\n"
-    +"Nombre: "+ name 
-    +"\nID: " + id
-    + "\nKg: "+ kg;
+public Resiclaje() {
 }
-}//end override
+}//end class
