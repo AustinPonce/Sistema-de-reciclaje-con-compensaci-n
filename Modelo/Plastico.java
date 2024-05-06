@@ -215,7 +215,7 @@ public class Plastico extends Resiclaje {// star class
 					//double pagoTotal = plastico.remuneracion();
 
 					// Mostrar el monto en un JOptionPane
-					JOptionPane.showMessageDialog(null, "El pago total es: $" + remuneracionPlastico(), "Pago Total",
+					JOptionPane.showMessageDialog(null, "La compensacion por resiclar es $" + remuneracionPlastico(), "Pago Total",
 							JOptionPane.INFORMATION_MESSAGE);
 
 					// Mostrar mensaje de éxito
@@ -257,7 +257,7 @@ public class Plastico extends Resiclaje {// star class
 // Override
 	@Override
 	public String toString() {
-		return "Plastico\n" + super.toString() +"\nMonto a pagar: "+ remuneracionPlastico() + "\nTipo de plastico" + typePlastic;
+		return "Plastico\n" + super.toString() +"\nCompensacion por resiclar "+ remuneracionPlastico() + "\nTipo de plastico" + typePlastic;
 
 	}
 

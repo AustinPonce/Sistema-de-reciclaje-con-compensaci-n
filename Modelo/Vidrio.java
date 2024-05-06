@@ -215,7 +215,7 @@ public class Vidrio extends Resiclaje{// star class
 					/*double pagoTotal = vidrio.remuneracionVidrio();*/
 
 					// Mostrar el monto en un JOptionPane
-				 	JOptionPane.showMessageDialog(null, "El pago total es: $" + remuneracionVidrio(), "Pago Total",
+				 	JOptionPane.showMessageDialog(null, "La compensacion por resiclar es$" + remuneracionVidrio(), "Pago Total",
 							JOptionPane.INFORMATION_MESSAGE);
 
 					// Mostrar mensaje de éxito
@@ -257,7 +257,7 @@ public class Vidrio extends Resiclaje{// star class
 // Override
 	@Override
 	public String toString() {
-		return "Vidrio\n" + super.toString() +"\nMonto a pagar: "+ remuneracionVidrio() + "\nTipo de vidrio" + typeGlass;
+		return "Vidrio\n" + super.toString() +"\nCompensacion por resiclar "+ remuneracionVidrio() + "\nTipo de vidrio" + typeGlass;
 
 	}
 

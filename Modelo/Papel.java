@@ -214,7 +214,7 @@ public class Papel extends Resiclaje {
 					//double pagoTotal = papel.remuneracion1();
 
 					// Mostrar el monto en un JOptionPane
-					JOptionPane.showMessageDialog(null, "El pago total es: $" + remuneracion1(), "Pago Total",
+					JOptionPane.showMessageDialog(null, "La compensacion por resiclar es: $" + remuneracion1(), "Pago Total",
 							JOptionPane.INFORMATION_MESSAGE);
 
 					// Mostrar mensaje de éxito
@@ -256,7 +256,7 @@ public class Papel extends Resiclaje {
 	// Override
 	@Override
 	public String toString() {
-		return "Papel\n" + super.toString() +"\nMonto a pagar: "+ remuneracion1() + "\nTipo de papel" + typePaper;
+		return "Papel\n" + super.toString() +"\nCompensacion por resiclar: "+ remuneracion1() + "\nTipo de papel" + typePaper;
 
 	}
 
