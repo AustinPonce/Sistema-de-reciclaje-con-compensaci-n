@@ -4,7 +4,7 @@ public class Plastico extends Resiclaje{// star class
     public int packsPlastic;// cantidad de paquetes de plastico
     public String typePlastic; // tipo de plastico botellas, jueguetes, cajas, etc
 
-    public Plastico(String name, String id, double kg, String typePlastic, int packsPlastic){
+    public Plastico(String name, int id, double kg, String typePlastic, int packsPlastic){
         super(name,id,kg);
         this.packsPlastic = packsPlastic;
         this.typePlastic = typePlastic;
