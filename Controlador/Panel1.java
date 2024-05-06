@@ -178,7 +178,7 @@ public class Panel1 extends JFrame {
 		// Permite al usuario eliminar los datos de un usuario específico
         @SuppressWarnings("unused")
 		JFrame frame = new JFrame();
-		TextArea textArea = new TextArea(40, 90);
+		TextArea textArea = new TextArea(90, 150);
 		textArea.setEditable(false);
 		@SuppressWarnings("unused")
 		JScrollPane A = new JScrollPane(textArea);
