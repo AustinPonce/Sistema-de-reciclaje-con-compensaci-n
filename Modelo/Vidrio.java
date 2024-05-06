@@ -251,7 +251,7 @@ public class Vidrio extends Resiclaje{// star class
 // Override
 	@Override
 	public String toString() {
-		return "Vidrio:\n" + super.toString() +"\nCompensacion por resiclar: "+ remuneracionVidrio() + "\nTipo de vidrio: " + typeGlass;
+		return "\nVidrio:\n" + super.toString() +"\nCompensacion por resiclar: "+ remuneracionVidrio() + "\nTipo de vidrio: " + typeGlass;
 
 	}
 
