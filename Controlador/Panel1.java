@@ -3,7 +3,6 @@ import java.awt.Font;
 import java.awt.TextArea;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.Serializable;
 import java.util.ArrayList;
 
 import javax.swing.JButton;
@@ -15,7 +14,7 @@ import javax.swing.JScrollPane;
 import javax.swing.border.EmptyBorder;
 
 @SuppressWarnings("serial")
-public class Panel1 extends JFrame implements Serializable{
+public class Panel1 extends JFrame {
 
 	private JPanel Principal;
 	ArrayList <Resiclaje> U = new ArrayList <Resiclaje>();
