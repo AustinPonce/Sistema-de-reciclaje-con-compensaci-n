@@ -17,7 +17,7 @@ import javax.swing.border.EmptyBorder;
 public class Vidrio extends Resiclaje{// star class
 	//atrivutos
 	public String typeGlass;// para indicar si son vasos, botellas. etc
-
+     
 	private JTextField textName;
 	private JTextField textID;
 	private JTextField textKG;

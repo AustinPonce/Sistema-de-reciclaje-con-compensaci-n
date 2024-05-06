@@ -7,7 +7,7 @@ public class Resiclaje  extends JFrame{//star class
     //atrivutos
 protected String name; 
 protected int id;
-protected static double kg;
+protected double kg;
 
 //star met abst
 public Resiclaje (String name,int id, double kg){
