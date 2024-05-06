@@ -3,7 +3,7 @@ public class Papel extends Resiclaje{//star class
 public int packsPaper; // cantidad de paquetes/cajas de papel
 public String typePaper;// tipo de papel, periodico,libros,cuadernos,etc
 
-    public Papel(String name, String id, double kg,int packsPaper, String typePaper){
+    public Papel(String name, int id, double kg,int packsPaper, String typePaper){
         super(name,id,kg);
         this.packsPaper = packsPaper;
         this.typePaper = typePaper; 
