@@ -15,50 +15,6 @@ public Resiclaje (String name, int id, double kg){
 } 
 //end met abst
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-public void initialize(){
-    JLabel etiqueta,etiqueta2,etiqueta3;
-    JTextField texto,texto2,texto3;
-
-    setLayout(null);
-
-    etiqueta = new JLabel("Nombre");
-    etiqueta.setBounds(10,20, 200,35);
-    add(etiqueta);
-
-    etiqueta2 = new JLabel("ID");
-    etiqueta2.setBounds(10,80, 200,35);
-    add(etiqueta2);
-
-    etiqueta3 = new JLabel("Kg");
-    etiqueta3.setBounds(10,80, 200,35);
-    add(etiqueta3);
-
-    texto=new JTextField("");
-    texto.setBounds(110,20,200,35);
-    add(texto);
-
-    texto2=new JTextField("");
-    texto2.setBounds(110,80,200,35);
-    add(texto2);
-
-    texto3=new JTextField("");
-    texto3.setBounds(110,140,200,35);
-    add(texto3);
-
-    JPanel ventana = new JPanel();
-    ventana.setLayout(new BorderLayout());
-    ventana.setBackground(new Color(0,153,153));
-
-    setTitle("Bienvenido");
-    setSize(500,600);
-    setMinimumSize(new Dimension(300,400));
-    setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-    setVisible(true);
-}
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 // gets and sets
 
 public Resiclaje() {
