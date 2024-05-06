@@ -3,11 +3,12 @@ import javax.swing.*;
 
 public class Resiclaje  extends JFrame{//star class
     //atrivutos
-protected String name,id;
+protected String name;
+protected int id;
 protected double kg;
     
 //star met abst
-public Resiclaje (String name,String id, double kg){
+public Resiclaje (String name, int id, double kg){
     this.name=name;
     this.id=id;
     this.kg=kg;
@@ -71,10 +72,10 @@ public void setName(String name){
     this.name=name;
 }
 
-public String getId(){
+public int getId(){
     return id;
 }
-public void setId(String id){
+public void setId(int id){
     this.id=id;
 }
 public double getKg(){

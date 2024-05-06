@@ -16,8 +16,6 @@
     import javax.swing.JTextArea;
     import javax.swing.JTextField;
     import javax.swing.border.EmptyBorder;
-    
-    import modelo.Resiclaje;
     @SuppressWarnings("serial")
     public class Panel1 extends JFrame implements Serializable{
     
