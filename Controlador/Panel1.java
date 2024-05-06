@@ -12,6 +12,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
 import javax.swing.border.EmptyBorder;
 
 public class Panel1 extends JFrame {
@@ -174,9 +176,9 @@ public class Panel1 extends JFrame {
 	// Método para eliminar datos de un usuario
 	public void Eliminar() {
 		// Permite al usuario eliminar los datos de un usuario específico
-		@SuppressWarnings("unused")
+        @SuppressWarnings("unused")
 		JFrame frame = new JFrame();
-		TextArea textArea = new TextArea(30, 70);
+		TextArea textArea = new TextArea(40, 90);
 		textArea.setEditable(false);
 		@SuppressWarnings("unused")
 		JScrollPane A = new JScrollPane(textArea);
@@ -185,7 +187,7 @@ public class Panel1 extends JFrame {
 		String Datos = "";
 
 		c = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el ID del usuario que desea eliminar",
-				"Eliminaci�n de usuario", JOptionPane.INFORMATION_MESSAGE));
+				"Eliminacion de usuario", JOptionPane.INFORMATION_MESSAGE));
 
 		for (int Movimiento = 0; Movimiento < U.size(); Movimiento++) {
 
