@@ -256,7 +256,7 @@ public class Papel extends Resiclaje {
 	// Override
 	@Override
 	public String toString() {
-		return "Papel:\n" + super.toString() +"\nCompensacion por resiclar: "+ remuneracion1() + "\nTipo de papel: " + typePaper;
+		return "\nPapel:\n" + super.toString() +"\nCompensacion por resiclar: "+ remuneracion1() + "\nTipo de papel: " + typePaper;
 
 	}
 
