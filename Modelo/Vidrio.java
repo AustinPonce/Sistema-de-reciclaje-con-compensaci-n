@@ -4,7 +4,7 @@ public class Vidrio extends Resiclaje{// star class
 	public String typeGlass;// para indicar si son vasos, botellas. etc
 
 	//met 
-	public Vidrio(String name, String id, double kg, String typeGlass, int packsGlass ){
+	public Vidrio(String name, int id, double kg, String typeGlass, int packsGlass ){
 	super(name,id,kg);
 	this.packsGlass=packsGlass;
 	this.typeGlass=typeGlass;
