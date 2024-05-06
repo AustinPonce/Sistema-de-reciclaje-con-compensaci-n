@@ -15,7 +15,7 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 public class Vidrio extends Resiclaje{// star class
-	//atrivutos
+	//atributos
 	public String typeGlass;// para indicar si son vasos, botellas. etc
      
 	private JTextField textName;
@@ -23,7 +23,7 @@ public class Vidrio extends Resiclaje{// star class
 	private JTextField textKG;
 	private JTextField texttypeGlass;
 
-	//met 
+	// Constructor
 	public Vidrio(String name, int id, double kg, String typeGlass ){
 	super(name,id,kg);
 	this.typeGlass=typeGlass;
@@ -32,7 +32,7 @@ public class Vidrio extends Resiclaje{// star class
 	//metodo para calcular la remuneracion por el vidrio
 	public double remuneracionVidrio(){
 	double remuneracion =0;
-	double valorVidrio =250; //monto por asignar
+	double valorVidrio =250; //monto 
 	remuneracion = valorVidrio * getKg();
 	return remuneracion;
 	}
@@ -44,9 +44,6 @@ public class Vidrio extends Resiclaje{// star class
 	public void setTypeGlass(String typeGlass) {
 		this.typeGlass = typeGlass;
 	}
-	/*public String setTypeGlass(String typeGlass){
-	    return typeGlass;
-	}*/
 	//fin gets y sets
 	public Vidrio() {
 
@@ -211,14 +208,8 @@ public class Vidrio extends Resiclaje{// star class
 					/*double kg =*/ setKg(Double.parseDouble(textKG.getText()));
 					setTypeGlass(texttypeGlass.getText());//arreglar 
 					dispose();
-					// Crear una instancia de Papel con los valores obtenidos
-					/*Vidrio vidrio= new Vidrio(name, id, kg, typeGlass);*/
-
-					// Calcular el pago total
-					/*double pagoTotal = vidrio.remuneracionVidrio();*/
-
 					// Mostrar el monto en un JOptionPane
-				 	JOptionPane.showMessageDialog(null, "La compensacion por resiclar es$" + remuneracionVidrio(), "Pago Total",
+				 	JOptionPane.showMessageDialog(null, "La compensacion por resiclar es: " + remuneracionVidrio(), "Pago Total",
 							JOptionPane.INFORMATION_MESSAGE);
 
 					// Mostrar mensaje de éxito
@@ -260,7 +251,7 @@ public class Vidrio extends Resiclaje{// star class
 // Override
 	@Override
 	public String toString() {
-		return "Vidrio\n" + super.toString() +"\nCompensacion por resiclar "+ remuneracionVidrio() + "\nTipo de vidrio" + typeGlass;
+		return "Vidrio:\n" + super.toString() +"\nCompensacion por resiclar: "+ remuneracionVidrio() + "\nTipo de vidrio: " + typeGlass;
 
 	}
 
