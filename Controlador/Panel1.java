@@ -169,9 +169,8 @@ public class Panel1 extends JFrame {
 
 		else {
 		JOptionPane.showMessageDialog(null, "No hay datos que se puedan mostrar", "No tenemos ningun registro", JOptionPane.INFORMATION_MESSAGE);
-	}}
-
-	// fin mostrar
+	}
+}// fin mostrar
 	// Método para eliminar datos de un usuario
 	public void Eliminar() {
 		// Permite al usuario eliminar los datos de un usuario específico

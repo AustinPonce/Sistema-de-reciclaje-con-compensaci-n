@@ -205,18 +205,18 @@ public class Papel extends Resiclaje {
 				} else {
 					// Obtener los valores de los campos de texto
 					setName(textName.getText());
-					int id = Integer.parseInt(textID.getText());
-					double kg = Double.parseDouble(textKG.getText());
+					/*int id =*/ setId(Integer.parseInt(textID.getText()));
+					/*double kg =*/ setKg(Double.parseDouble(textKG.getText()));
 					setTypePaper(texttypePaper.getText());
 					dispose();
 					// Crear una instancia de Papel con los valores obtenidos
-					Papel papel = new Papel(name, id, kg, typePaper);
+					//Papel papel = new Papel(name, id, kg, typePaper);
 
 					// Calcular el pago total
-					double pagoTotal = papel.remuneracion1();
+					//double pagoTotal = papel.remuneracion1();
 
 					// Mostrar el monto en un JOptionPane
-					JOptionPane.showMessageDialog(null, "El pago total es: $" + pagoTotal, "Pago Total",
+					JOptionPane.showMessageDialog(null, "El pago total es: $" + remuneracion1(), "Pago Total",
 							JOptionPane.INFORMATION_MESSAGE);
 
 					// Mostrar mensaje de éxito
@@ -258,7 +258,7 @@ public class Papel extends Resiclaje {
 	// Override
 	@Override
 	public String toString() {
-		return "Papel\n" + super.toString() + "\nTipo de papel" + typePaper;
+		return "Papel\n" + super.toString() +"\nMonto a pagar: "+ remuneracion1() + "\nTipo de papel" + typePaper;
 
 	}
 

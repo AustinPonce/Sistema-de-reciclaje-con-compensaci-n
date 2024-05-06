@@ -30,7 +30,7 @@ public class Vidrio extends Resiclaje{// star class
 	}
 
 	//metodo para calcular la remuneracion por el vidrio
-	public double remuneracion(){
+	public double remuneracionVidrio(){
 	double remuneracion =0;
 	double valorVidrio =250; //monto por asignar
 	remuneracion = valorVidrio * getKg();
@@ -204,18 +204,18 @@ public class Vidrio extends Resiclaje{// star class
 				} else {
 					// Obtener los valores de los campos de texto
 					setName(textName.getText());
-					int id = Integer.parseInt(textID.getText());
-					double kg = Double.parseDouble(textKG.getText());
-					setTypeGlass(texttypeGlass.getText());
+					/*int id =*/setId( Integer.parseInt(textID.getText()));
+					/*double kg =*/ setKg(Double.parseDouble(textKG.getText()));
+					setTypeGlass(texttypeGlass.getText());//arreglar 
 					dispose();
 					// Crear una instancia de Papel con los valores obtenidos
-					Vidrio vidrio= new Vidrio(name, id, kg, typeGlass);
+					/*Vidrio vidrio= new Vidrio(name, id, kg, typeGlass);*/
 
 					// Calcular el pago total
-					double pagoTotal = vidrio.remuneracion();
+					/*double pagoTotal = vidrio.remuneracionVidrio();*/
 
 					// Mostrar el monto en un JOptionPane
-					JOptionPane.showMessageDialog(null, "El pago total es: $" + pagoTotal, "Pago Total",
+				 	JOptionPane.showMessageDialog(null, "El pago total es: $" + remuneracionVidrio(), "Pago Total",
 							JOptionPane.INFORMATION_MESSAGE);
 
 					// Mostrar mensaje de éxito
@@ -257,7 +257,7 @@ public class Vidrio extends Resiclaje{// star class
 // Override
 	@Override
 	public String toString() {
-		return "Vidrio\n" + super.toString() + "\nTipo de vidrio" + typeGlass;
+		return "Vidrio\n" + super.toString() +"\nMonto a pagar: "+ remuneracionVidrio() + "\nTipo de vidrio" + typeGlass;
 
 	}
 

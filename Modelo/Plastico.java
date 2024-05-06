@@ -28,7 +28,7 @@ public class Plastico extends Resiclaje {// star class
 		this.typePlastic = typePlastic;
 	}
 
-	public double remuneracion() {
+	public double remuneracionPlastico() {
 		double remuneracion = 0;
 		double valorPlastico = 300; // monto por asignar
 		remuneracion = valorPlastico * getKg();
@@ -204,18 +204,18 @@ public class Plastico extends Resiclaje {// star class
 				} else {
 					// Obtener los valores de los campos de texto
 					setName(textName.getText());
-					int id = Integer.parseInt(textID.getText());
-					double kg = Double.parseDouble(textKG.getText());
+					/*int id =*/ setId(Integer.parseInt(textID.getText()));
+					/*double kg =*/ setKg(Double.parseDouble(textKG.getText()));
 					setTypePlastic(texttypePlastic.getText());
 					dispose();
 					// Crear una instancia de Papel con los valores obtenidos
-					Plastico plastico = new Plastico(name, id, kg, typePlastic);
+					//Plastico plastico = new Plastico(name, id, kg, typePlastic);
 
 					// Calcular el pago total
-					double pagoTotal = plastico.remuneracion();
+					//double pagoTotal = plastico.remuneracion();
 
 					// Mostrar el monto en un JOptionPane
-					JOptionPane.showMessageDialog(null, "El pago total es: $" + pagoTotal, "Pago Total",
+					JOptionPane.showMessageDialog(null, "El pago total es: $" + remuneracionPlastico(), "Pago Total",
 							JOptionPane.INFORMATION_MESSAGE);
 
 					// Mostrar mensaje de éxito
@@ -257,7 +257,7 @@ public class Plastico extends Resiclaje {// star class
 // Override
 	@Override
 	public String toString() {
-		return "Plastico\n" + super.toString() + "\nTipo de plastico" + typePlastic;
+		return "Plastico\n" + super.toString() +"\nMonto a pagar: "+ remuneracionPlastico() + "\nTipo de plastico" + typePlastic;
 
 	}
 
