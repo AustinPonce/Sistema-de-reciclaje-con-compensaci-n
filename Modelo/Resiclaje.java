@@ -17,9 +17,7 @@ public Resiclaje (String name, int id, double kg){
 
 // gets and sets
 
-public Resiclaje() {
-	// TODO Auto-generated constructor stub
-}
+
 
 public String getName(){
     return name;
