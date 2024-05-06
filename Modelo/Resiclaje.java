@@ -1,4 +1,4 @@
-import  java.awt.*;
+
 import javax.swing.*;
 
 public class Resiclaje  extends JFrame{//star class
