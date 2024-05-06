@@ -44,8 +44,7 @@ public class Panel1 extends JFrame implements Serializable{
 		label.setBounds(527, 331, 137, 164);
 		Principal.add(label);
 		
-/****************************************************************************************************************************************************************/
-		// Botón para ingresar datos
+
 		JButton btnIngresar = new JButton("Ingresar datos");
 		btnIngresar.setBounds(42, 59, 138, 23);
 		btnIngresar.setFont(new Font("Tahoma", Font.PLAIN, 10));
@@ -62,7 +61,7 @@ public class Panel1 extends JFrame implements Serializable{
 		btnIngresar.setToolTipText("Ingresar datos de usuarios");
 		Principal.add(btnIngresar);
 		
-/****************************************************************************************************************************************************************/		
+
 		// Botón para mostrar datos
 		JButton btnMostrarDatos = new JButton("Mostrar datos");
 		btnMostrarDatos.setFont(new Font("Tahoma", Font.PLAIN, 10));
@@ -78,9 +77,6 @@ public class Panel1 extends JFrame implements Serializable{
 		btnMostrarDatos.setToolTipText("Muestra datos del usuario");
 		Principal.add(btnMostrarDatos);
 		
-	
-
-/***************************************************************************************************************************************************************/		
 		// Botón para eliminar datos
 		JButton btnEliminarDatos =  new JButton("Eliminar datos");
 		btnEliminarDatos.setBounds(42, 104, 138, 23);
@@ -147,39 +143,43 @@ public class Panel1 extends JFrame implements Serializable{
 		
 		
 	}//fin mostrar
-     // Método para eliminar datos de un usuario
-	public void Eliminar() { // hacerlo en un panel
-	    JFrame frame = new JFrame();
-	    TextArea textArea = new TextArea(30, 70);
-	    textArea.setEditable(false);
-	    JScrollPane A = new JScrollPane(textArea);
-	    boolean registroEncontrado = false;
-	    String datos = "";
+  // Método para eliminar datos de un usuario
+  public void Eliminar() {
+    // Permite al usuario eliminar los datos de un usuario específico	
+    @SuppressWarnings("unused")
+    JFrame frame = new JFrame();
+    TextArea textArea = new TextArea (30,70);
+    textArea.setEditable(false);
+    @SuppressWarnings("unused")
+    JScrollPane A = new JScrollPane(textArea);
+    boolean v =false;
+    int c;
+    String Datos = "";	
+    
+         c = Integer.parseInt( JOptionPane.showInputDialog(null, "Ingrese el ID del usuario que desea eliminar","Eliminaci�n de usuario",JOptionPane.INFORMATION_MESSAGE));	
 
-	    int idEliminar;
-	    try {
-	        idEliminar = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el ID del usuario que desea eliminar", "Eliminación de usuario", JOptionPane.INFORMATION_MESSAGE));
-	    } catch (NumberFormatException e) {
-	        JOptionPane.showMessageDialog(null, "Ingrese un ID válido", "Error", JOptionPane.ERROR_MESSAGE);
-	        return;
-	    }
-  
-	    for (int i = 0; i < U.size(); i++) {
-	        if (U.get(i).getId() == idEliminar) {
-	            registroEncontrado = true;
-	            int respuesta = JOptionPane.showConfirmDialog(null, "¿Está seguro de eliminar este registro?", "Confirmación", JOptionPane.YES_NO_OPTION);
-	            if (respuesta == JOptionPane.YES_OPTION) {
-	                U.remove(i);
-	                JOptionPane.showMessageDialog(null, "Registro eliminado exitosamente.", "Éxito", JOptionPane.INFORMATION_MESSAGE);
-	            } else {
-	                JOptionPane.showMessageDialog(null, "Eliminación cancelada.", "Cancelado", JOptionPane.INFORMATION_MESSAGE);
-	            }
-	            break; // Salir del bucle una vez que se ha encontrado y eliminado el registro
-	        }
-	    }
+         for(int Movimiento = 0; Movimiento < U.size(); Movimiento++) {
+                
+            if(U.get(Movimiento).getId()== c){
+             v=true;
+        int b =JOptionPane.showConfirmDialog(null, "Desea confirmar la Eliminacion","Eliminamos?", JOptionPane.YES_NO_OPTION);
+                if(b==JOptionPane.YES_OPTION) {
+        U.remove(Movimiento);
+        JOptionPane.showMessageDialog(null, "Eliminacion Exitosa.", "Eliminacion Realizada",JOptionPane.INFORMATION_MESSAGE);
 
-	    if (!registroEncontrado) {
-	        JOptionPane.showMessageDialog(null, "No se encontró ningún registro con el ID especificado.", "Registro no encontrado", JOptionPane.INFORMATION_MESSAGE);
-	    }
-	}
+                }else {
+                    JOptionPane.showMessageDialog(null, "Eliminacion Cancelada.", "Eliminacion Cancelada",JOptionPane.INFORMATION_MESSAGE);
+                }
+            }
+            
+            
+        for(int i = 0; i < U.size(); i ++) {
+            Datos += (i+1)+""+ U.get(i);
+        }
+            textArea.setText(Datos);
+        }
+        if (!v) {
+                JOptionPane.showMessageDialog(null,"Registro no encontrado.", "Notificacion",JOptionPane.INFORMATION_MESSAGE);
+        }
+}
 	}
