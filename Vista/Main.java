@@ -8,7 +8,7 @@ public class Main {
     EventQueue.invokeLater(new Runnable() {
         public void run() {
             try {
-                final Procesos accionesDelMenu = new Procesos(); // Creamos objeto para ejecución
+                final Panel1 accionesDelMenu = new Panel1(); // Creamos objeto para ejecución
                 accionesDelMenu.setVisible(true); // Lo hacemos visibles
                 accionesDelMenu.addWindowListener(new WindowAdapter() { // Acción para cerrar si se marca la x en la principal.
 
