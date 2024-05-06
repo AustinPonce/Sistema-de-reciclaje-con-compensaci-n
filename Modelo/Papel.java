@@ -96,9 +96,8 @@ public class Papel extends Resiclaje {
 		});
 		Panel.add(textName);
 
-		// Etiqueta y campo de texto para ingresar el número de placa
 		JLabel id = new JLabel("ID");
-		id.setToolTipText("Placa");
+		id.setToolTipText("ID");
 		id.setFont(new Font("Serif", Font.PLAIN, 16));// tamaño de fuente
 		id.setBounds(25, 61, 137, 14); // (x, y, cuadro de lectras,alto de letras)
 		Panel.add(id);
@@ -128,7 +127,7 @@ public class Papel extends Resiclaje {
 		Panel.add(textID);
 
 		JLabel kg = new JLabel("Peso total en Kg");
-		kg.setToolTipText("Marca");
+		kg.setToolTipText("Peso total en Kg");
 		kg.setFont(new Font("Serif", Font.PLAIN, 16));// tamaño de fuente
 		kg.setBounds(25, 96, 113, 18); // (x, y, cuadro de lectras,alto de letras)
 		Panel.add(kg);
@@ -159,10 +158,9 @@ public class Papel extends Resiclaje {
 		});
 
 		Panel.add(textKG);
-
-		// Etiqueta y campo de texto para ingresar el ID
+        
 		JLabel tipo = new JLabel("Tipo de Papel");
-		tipo.setToolTipText("Identificación");
+		tipo.setToolTipText("Tipo de Papel");
 		tipo.setFont(new Font("Serif", Font.PLAIN, 16));
 		tipo.setBounds(25, 129, 179, 14);
 		Panel.add(tipo);
@@ -205,9 +203,9 @@ public class Papel extends Resiclaje {
 				} else {
 					// Obtener los valores de los campos de texto
 					setName(textName.getText());
-					/*int id =*/ setId(Integer.parseInt(textID.getText()));
-					/*double kg =*/ setKg(Double.parseDouble(textKG.getText()));
-					setTypePaper(texttypePaper.getText());
+					setId(Integer.parseInt(textID.getText()));
+					setKg(Double.parseDouble(textKG.getText()));
+				    setTypePaper(texttypePaper.getText());
 					dispose();
 					// Crear una instancia de Papel con los valores obtenidos
 					//Papel papel = new Papel(name, id, kg, typePaper);

@@ -97,7 +97,7 @@ public class Vidrio extends Resiclaje{// star class
 
 		// Etiqueta y campo de texto para ingresar el número de placa
 		JLabel id = new JLabel("ID");
-		id.setToolTipText("Placa");
+		id.setToolTipText("ID");
 		id.setFont(new Font("Serif", Font.PLAIN, 16));// tamaño de fuente
 		id.setBounds(25, 61, 137, 14); // (x, y, cuadro de lectras,alto de letras)
 		Panel.add(id);
@@ -127,7 +127,7 @@ public class Vidrio extends Resiclaje{// star class
 		Panel.add(textID);
 
 		JLabel kg = new JLabel("Peso total en Kg");
-		kg.setToolTipText("Marca");
+		kg.setToolTipText("Peso total en Kg");
 		kg.setFont(new Font("Serif", Font.PLAIN, 16));// tamaño de fuente
 		kg.setBounds(25, 96, 113, 18); // (x, y, cuadro de lectras,alto de letras)
 		Panel.add(kg);
@@ -161,7 +161,7 @@ public class Vidrio extends Resiclaje{// star class
 
 		// Etiqueta y campo de texto para ingresar el ID
 		JLabel tipo = new JLabel("Tipo de Vidrio");
-		tipo.setToolTipText("Identificación");
+		tipo.setToolTipText("Tipo de Vidrio");
 		tipo.setFont(new Font("Serif", Font.PLAIN, 16));
 		tipo.setBounds(25, 129, 179, 14);
 		Panel.add(tipo);
