@@ -41,9 +41,12 @@ public class Vidrio extends Resiclaje{// star class
 	public String getTypeGlass(){
 	    return typeGlass;
 	}
-	public String setTypeGlass(String typeGlass){
-	    return typeGlass;
+	public void setTypeGlass(String typeGlass) {
+		this.typeGlass = typeGlass;
 	}
+	/*public String setTypeGlass(String typeGlass){
+	    return typeGlass;
+	}*/
 	//fin gets y sets
 	public Vidrio() {
 
