@@ -252,7 +252,7 @@ public class Plastico extends Resiclaje {// star class
 // Override
 	@Override
 	public String toString() {
-		return "Plastico:\n" + super.toString() +"\nCompensacion por resiclar: "+ remuneracionPlastico() + "\nTipo de plastico: " + typePlastic;
+		return "\nPlastico:\n" + super.toString() +"\nCompensacion por resiclar: "+ remuneracionPlastico() + "\nTipo de plastico: " + typePlastic;
 
 	}
 
