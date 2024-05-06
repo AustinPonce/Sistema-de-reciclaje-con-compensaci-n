@@ -39,7 +39,15 @@ public double setKg(double kg){
 }
 //end gets and sets
 
-
+//construtor vacio
 public Resiclaje() {
 }
+
+// Override
+@Override
+public String toString() {
+    return "Informacion\n" + "Nombre: "+ name + "\nID: "+id+"\nKilos entregados: "+kg;
+
+}
+
 }//end class
