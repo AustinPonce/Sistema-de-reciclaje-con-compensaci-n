@@ -25,7 +25,7 @@ public class Papel extends Resiclaje {
 		this.typePaper = typePaper;
 	}
 
-	// Otros métodos...
+
 	public double remuneracion1() {
 		double remuneracion = 0;
 		double valorPapel = 150; // monto por asignar
