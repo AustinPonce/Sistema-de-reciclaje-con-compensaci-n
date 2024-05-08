@@ -57,21 +57,6 @@ public class Papel extends Resiclaje {
 		setVisible(true);
 		Panel.setLayout(null);
         
-		//para cerrar solo este panel cuando selecionen la "x"
-		addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				int a = JOptionPane.showConfirmDialog(null, "Estás seguro de que quieres salir?",
-						"Ingrese la informacion solicitada", JOptionPane.YES_NO_OPTION);
-
-				if (JOptionPane.YES_OPTION == a) {
-					dispose(); // Cerrar solo esta ventana
-
-					JOptionPane.showMessageDialog(null, "Acabas de perder todos los datos ingresados", "Datos perdidos",
-							JOptionPane.INFORMATION_MESSAGE);
-				}
-			}
-		});
 		// Etiquetas y campos de texto para ingresar información del usuario
 		JLabel Nombre = new JLabel("Nombre");
 		Nombre.setToolTipText("Nombre");
