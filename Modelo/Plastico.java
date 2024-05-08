@@ -248,7 +248,7 @@ public class Plastico extends Resiclaje {// star class
 			public void actionPerformed(ActionEvent e) {
 
 				int a = JOptionPane.showConfirmDialog(null, "Estás seguro de que quieres salir?",
-						"Salida de ingreso de datos", JOptionPane.YES_NO_OPTION);
+						"Ingrese la informacion solicitada", JOptionPane.YES_NO_OPTION);
 
 				if (JOptionPane.YES_NO_OPTION == a) {
 					setName("Nulo");
