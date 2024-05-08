@@ -50,7 +50,7 @@ public class Plastico extends Resiclaje {// star class
 		// Configurar JFrame y establecer propiedades
 		setBackground(Color.LIGHT_GRAY);
 		setFont(new Font("Lucida Bright", Font.PLAIN, 12));
-		setTitle("Informacion del usuario");
+		setTitle("Ingrese la informacion solicitada");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		JPanel Panel = new JPanel();
