@@ -51,7 +51,7 @@ public class Papel extends Resiclaje {
 		// Configurar JFrame y establecer propiedades
 		setBackground(Color.LIGHT_GRAY);
 		setFont(new Font("Lucida Bright", Font.PLAIN, 12));
-		setTitle("Informacion del usuario");
+		setTitle("Ingrese la informacion solicitada");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		JPanel Panel = new JPanel();
@@ -235,7 +235,7 @@ public class Papel extends Resiclaje {
 			public void actionPerformed(ActionEvent e) {
 
 				int a = JOptionPane.showConfirmDialog(null, "Estás seguro de que quieres salir?",
-						"Salida de ingreso de datos", JOptionPane.YES_NO_OPTION);
+						"Ingrese la informacion solicitada", JOptionPane.YES_NO_OPTION);
 
 				if (JOptionPane.YES_NO_OPTION == a) {
 					setName("Nulo");

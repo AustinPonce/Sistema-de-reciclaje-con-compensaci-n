@@ -60,7 +60,7 @@ public class Plastico extends Resiclaje {// star class
 		setVisible(true);
 		Panel.setLayout(null);
 
-		 // Agregar WindowListener para cerrar solo esta ventana cuando se toca la "x"
+		 //cerrar solo esta ventana cuando se toca la "x"
 		 addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
