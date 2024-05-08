@@ -126,7 +126,7 @@ public class Panel1 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				int a = JOptionPane.showConfirmDialog(null, "Esta seguro de que desea salir del registro?",
-						"Confirmaci�n", JOptionPane.YES_NO_OPTION);
+						"Confirmacion", JOptionPane.YES_NO_OPTION);
 				if (JOptionPane.YES_NO_OPTION == a) {
 					JOptionPane.showMessageDialog(null, "Gracias por preferirnos", "Cerrando sistema",
 							JOptionPane.INFORMATION_MESSAGE);
