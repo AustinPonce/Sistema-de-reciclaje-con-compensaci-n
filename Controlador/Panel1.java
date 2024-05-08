@@ -41,7 +41,6 @@ public class Panel1 extends JFrame {
 		label.setBounds(527, 331, 137, 164);
 		Principal.add(label);
 
-		/****************************************************************************************************************************************************************/
 		// Botón para ingresar datos
 		JButton btnPapel = new JButton("Reciclaje de Papel");
 		btnPapel.setBounds(42, 59, 138, 23);
