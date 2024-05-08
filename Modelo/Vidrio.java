@@ -60,16 +60,6 @@ public class Vidrio extends Resiclaje{// star class
 		setVisible(true);
 		Panel.setLayout(null);
 
-		// solo esta ventana cuando se toca la "x"
-		addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				int a = JOptionPane.showConfirmDialog(null, "Estás seguro de que quieres salir?",
-						"Ingrese la informacion solicitada", JOptionPane.YES_NO_OPTION);
-					dispose(); // Cerrar solo esta ventana
-
-			}
-		});
 		// Etiquetas y campos de texto para ingresar información del usuario
 		JLabel Nombre = new JLabel("Nombre");
 		Nombre.setToolTipText("Nombre");
