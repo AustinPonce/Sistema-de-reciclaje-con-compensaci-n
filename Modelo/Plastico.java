@@ -12,6 +12,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+import java.awt.event.*;
 
 public class Plastico extends Resiclaje {// star class
 	// atrivutos
@@ -59,6 +60,22 @@ public class Plastico extends Resiclaje {// star class
 		setVisible(true);
 		Panel.setLayout(null);
 
+		 // Agregar WindowListener para cerrar solo esta ventana cuando se toca la "x"
+		 addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                int a = JOptionPane.showConfirmDialog(null, "Estás seguro de que quieres salir?",
+                        "Salida de ingreso de datos", JOptionPane.YES_NO_OPTION);
+
+                if (JOptionPane.YES_NO_OPTION == a) {
+                    setName("Nulo");
+                    dispose(); // Cerrar solo esta ventana
+
+                    JOptionPane.showMessageDialog(null, "Acabas de perder todos los datos ingresados", "Datos perdidos",
+                            JOptionPane.INFORMATION_MESSAGE);
+                }
+            }
+        });
 		// Etiquetas y campos de texto para ingresar información del usuario
 		JLabel Nombre = new JLabel("Nombre");
 		Nombre.setToolTipText("Nombre");
