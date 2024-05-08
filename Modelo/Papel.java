@@ -12,6 +12,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+import java.awt.event.*;
 
 public class Papel extends Resiclaje {
 	// Atributos adicionales
@@ -36,7 +37,7 @@ public class Papel extends Resiclaje {
 		return remuneracion;
 	}
 
-//star gets and sets
+	// star gets and sets
 	public String getTypePaper() {
 		return typePaper;
 	}
@@ -44,7 +45,7 @@ public class Papel extends Resiclaje {
 	public void setTypePaper(String typePaper) {
 		this.typePaper = typePaper;
 	}
-//end gets and sets
+	// end gets and sets
 
 	public Papel() {
 
@@ -60,6 +61,22 @@ public class Papel extends Resiclaje {
 		setVisible(true);
 		Panel.setLayout(null);
 
+		// solo esta ventana cuando se toca la "x"
+		addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent e) {
+				int a = JOptionPane.showConfirmDialog(null, "Estás seguro de que quieres salir?",
+						"Ingrese la informacion solicitada", JOptionPane.YES_NO_OPTION);
+
+				if (JOptionPane.YES_NO_OPTION == a) {
+					setName("Nulo");
+					dispose(); // Cerrar solo esta ventana
+
+					JOptionPane.showMessageDialog(null, "Acabas de perder todos los datos ingresados", "Datos perdidos",
+							JOptionPane.INFORMATION_MESSAGE);
+				}
+			}
+		});
 		// Etiquetas y campos de texto para ingresar información del usuario
 		JLabel Nombre = new JLabel("Nombre");
 		Nombre.setToolTipText("Nombre");
@@ -158,7 +175,7 @@ public class Papel extends Resiclaje {
 		});
 
 		Panel.add(textKG);
-        
+
 		JLabel tipo = new JLabel("Tipo de Papel");
 		tipo.setToolTipText("Tipo de Papel");
 		tipo.setFont(new Font("Serif", Font.PLAIN, 16));
@@ -205,16 +222,17 @@ public class Papel extends Resiclaje {
 					setName(textName.getText());
 					setId(Integer.parseInt(textID.getText()));
 					setKg(Double.parseDouble(textKG.getText()));
-				    setTypePaper(texttypePaper.getText());
+					setTypePaper(texttypePaper.getText());
 					dispose();
 					// Crear una instancia de Papel con los valores obtenidos
-					//Papel papel = new Papel(name, id, kg, typePaper);
+					// Papel papel = new Papel(name, id, kg, typePaper);
 
 					// Calcular el pago total
-					//double pagoTotal = papel.remuneracion1();
+					// double pagoTotal = papel.remuneracion1();
 
 					// Mostrar el monto en un JOptionPane
-					JOptionPane.showMessageDialog(null, "La compensacion por resiclar es: " + remuneracion1(), "Pago Total",
+					JOptionPane.showMessageDialog(null, "La compensacion por resiclar es: " + remuneracion1(),
+							"Pago Total",
 							JOptionPane.INFORMATION_MESSAGE);
 
 					// Mostrar mensaje de éxito
@@ -256,7 +274,8 @@ public class Papel extends Resiclaje {
 	// Override
 	@Override
 	public String toString() {
-		return "\nPapel:\n" + super.toString() +"\nCompensacion por resiclar: "+ remuneracion1() + "\nTipo de papel: " + typePaper;
+		return "\nPapel:\n" + super.toString() + "\nCompensacion por resiclar: " + remuneracion1() + "\nTipo de papel: "
+				+ typePaper;
 
 	}
 
