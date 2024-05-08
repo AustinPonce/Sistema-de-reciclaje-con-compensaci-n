@@ -1,9 +1,5 @@
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -60,16 +56,15 @@ public class Papel extends Resiclaje {
 		setContentPane(Panel);
 		setVisible(true);
 		Panel.setLayout(null);
-
-		// solo esta ventana cuando se toca la "x"
+        
+		//para cerrar solo este panel cuando selecionen la "x"
 		addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
 				int a = JOptionPane.showConfirmDialog(null, "Estás seguro de que quieres salir?",
 						"Ingrese la informacion solicitada", JOptionPane.YES_NO_OPTION);
 
-				if (JOptionPane.YES_NO_OPTION == a) {
-					setName("Nulo");
+				if (JOptionPane.YES_OPTION == a) {
 					dispose(); // Cerrar solo esta ventana
 
 					JOptionPane.showMessageDialog(null, "Acabas de perder todos los datos ingresados", "Datos perdidos",

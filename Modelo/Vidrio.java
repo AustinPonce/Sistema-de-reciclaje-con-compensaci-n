@@ -66,14 +66,8 @@ public class Vidrio extends Resiclaje{// star class
 			public void windowClosing(WindowEvent e) {
 				int a = JOptionPane.showConfirmDialog(null, "Estás seguro de que quieres salir?",
 						"Ingrese la informacion solicitada", JOptionPane.YES_NO_OPTION);
-
-				if (JOptionPane.YES_NO_OPTION == a) {
-					setName("Nulo");
 					dispose(); // Cerrar solo esta ventana
 
-					JOptionPane.showMessageDialog(null, "Acabas de perder todos los datos ingresados", "Datos perdidos",
-							JOptionPane.INFORMATION_MESSAGE);
-				}
 			}
 		});
 		// Etiquetas y campos de texto para ingresar información del usuario
